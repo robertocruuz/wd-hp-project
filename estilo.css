@@ -1,20 +1,26 @@
 /*** GERAL ***/
+@font-face {
+    font-family: BluuNext;
+    src: url(fonts/BluuNext-Bold.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 body{
-    /* background: black url(img/bg.png) repeat center center; */
-    background: #10141B;
+    background: black url(img/bg2.jpeg) repeat center center;
     color: white;
-    font-family: 'Lexend', sans-serif;
+    font-family: "sofia-pro", sans-serif;
 }
-
-
 
 a:hover{
     transition: color 2s;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: BluuNext, serif;
 }
 
 #banner img{ width: 100%; }
@@ -23,7 +29,6 @@ a:hover{
 #header{
     background-image: linear-gradient(to bottom, #1C293A, transparent);
     border-top: 4px solid white;
-    font-family: 'Inter', sans-serif;
     height: 250px;
     padding: 50px 0 0;
 }
@@ -70,6 +75,8 @@ a:hover{
 #footer ul.links a{ color: white; }
 #footer ul.links a:hover{ color: #F2DA59; }
 
+
+
 /*** HOMEPAGE ***/
 
 #carrossel .carousel-item{
@@ -80,10 +87,10 @@ a:hover{
     width: 100%;
 }
 #carrossel .carousel-item .carousel-caption{
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     left: 40px;
-    line-height: 38px;
+    line-height: 36px;
     text-align: left;
 }
 #carrossel .carousel-item .carousel-caption a{
@@ -92,7 +99,8 @@ a:hover{
 }
 #carrossel .carousel-item .carousel-caption a:hover{ color: #F2DA59; }
 #carrossel .carousel-item .carousel-caption strong{
-    font-size: 36px;
+    font-family: BluuNext, serif;
+    font-size: 40px;
     font-weight: 900;
 }
 #carrossel .carousel-item .carousel-caption span{
@@ -114,7 +122,6 @@ a:hover{
     display: block;
     margin: 0 auto 30px auto;
 }
-
 
 /*  SETA  */
 
@@ -200,7 +207,6 @@ a:hover{
     justify-content: space-between;
 }
 #lista ul{
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 40px;
@@ -292,8 +298,20 @@ a:hover{
     justify-content: space-between;
 }
 #personagens .item{
-    text-align: center;
-    width: 30%;
+    /*text-align: center;*/
+    width: 23%;
+}
+#personagens .item .boxImage{
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+#personagens .item .personagemInfo p{
+    margin-bottom: 2px;
+    font-size: 17px;
+}
+#personagens .item .personagemInfo .personagemCasa{
+    color: #F2DA59;
 }
 #personagens .item a{
     color: white;
@@ -438,7 +456,7 @@ a:hover{
 }
 
 #formcontato{
-    font-family: 'Lexend', sans-serif;
+    font-family: "sofia-pro", sans-serif;
 }
 #formcontato input, #formcontato textarea{
     background: transparent;
@@ -446,7 +464,7 @@ a:hover{
     border-bottom: 1px solid white;
     box-shadow: transparent;
     color: white;
-    font-family: 'Lexend', sans-serif;
+    font-family: "sofia-pro", sans-serif;
     font-size: 18px;
     margin-bottom: 30px;
     line-height: 30px;
